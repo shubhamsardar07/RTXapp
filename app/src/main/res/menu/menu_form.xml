@@ -2,6 +2,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="rtxindia.com.rtxapp.FormActivity">
+
+    <item
+        android:id="@+id/action_selectPr"
+        android:orderInCategory="100"
+        android:title="Select From Previous Orders"
+        app:showAsAction="never" />
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

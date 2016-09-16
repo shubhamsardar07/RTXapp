@@ -11,9 +11,10 @@
     tools:context="rtxindia.com.rtxapp.FormActivity">
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView" >
+        android:id="@+id/scrollView"
+        android:background="@drawable/roadtx">
 
         <LinearLayout
             android:orientation="vertical"
@@ -24,9 +25,10 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorAccent"
                 android:weightSum="10"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:alpha="0.8">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -52,9 +54,10 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorAccent"
                 android:weightSum="10"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:alpha="0.8">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -76,14 +79,6 @@
                     android:hint="Destination" />
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:id="@+id/imageView5"
-                android:src="@drawable/screenshot"
-                android:scaleType="fitStart"
-                android:background="@null" />
-
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
@@ -102,7 +97,8 @@
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="Order Name : "
                         android:id="@+id/textView6"
-                        android:layout_gravity="right" />
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorPrimaryDark" />
 
                     <EditText
                         android:layout_width="match_parent"
@@ -125,7 +121,8 @@
                         android:text="Start Date : "
                         android:id="@+id/textView7"
                         android:layout_gravity="right"
-                        android:paddingBottom="5dp" />
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/colorPrimaryDark" />
 
                     <DatePicker
                         android:layout_width="match_parent"
@@ -145,14 +142,15 @@
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="Material : "
                         android:id="@+id/textView10"
-                        android:layout_gravity="right" />
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorPrimaryDark" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/editText8"
                         android:padding="10dp"
-                        android:hint="Eg : Glass,Sand etc" />
+                        android:hint="Eg : Glass , Sand etc" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -167,7 +165,8 @@
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="Weight (in TONs) : "
                         android:id="@+id/textView11"
-                        android:layout_gravity="right" />
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorPrimaryDark" />
 
                     <EditText
                         android:layout_width="match_parent"
@@ -193,7 +192,8 @@
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="Truck Type : "
                         android:id="@+id/textView12"
-                        android:layout_gravity="right" />
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorPrimaryDark" />
 
                     <Spinner
                         android:layout_width="match_parent"
@@ -203,6 +203,205 @@
 
 
                 </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Body Type : "
+                        android:id="@+id/textView15"
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner2"
+                        android:padding="10dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Expected price per trip (in ₹) : "
+                        android:id="@+id/textView16"
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/editText6"
+                        android:padding="10dp"
+                        android:hint="Eg: 1000" />
+
+
+                </LinearLayout> <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Frequency of trucks : "
+                    android:id="@+id/textView17"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="3">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Min:"
+                            android:gravity="center_horizontal"/>
+
+                        <NumberPicker
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/numberPicker"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="3">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Max:"
+                            android:gravity="center_horizontal"/>
+
+                        <NumberPicker
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/numberPicker1"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="4"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="per:"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner3"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Comments on this order : "
+                        android:id="@+id/textView19"
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/round_corner_bg"
+                        android:ems="10"
+                        android:id="@+id/editText20"
+                        android:padding="10dp"
+                        android:hint="Type your comment here:"
+                        android:gravity="top"
+                        android:layout_marginTop="10dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I Accept"
+                            android:id="@+id/radioButton" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text=" Terms and Conditions"
+                            android:textColor="@android:color/holo_blue_dark"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton3"
+                    android:src="@drawable/submitbutton"
+                    android:scaleType="fitXY"
+                    android:background="@null" />
+
+
+            </LinearLayout>
 
             </LinearLayout>
 
