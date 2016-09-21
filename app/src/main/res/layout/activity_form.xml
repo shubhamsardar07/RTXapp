@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView"
-        android:background="@drawable/roadtx">
+        android:background="#dbe7e0">
 
         <LinearLayout
             android:orientation="vertical"
@@ -124,10 +124,15 @@
                         android:paddingBottom="5dp"
                         android:textColor="@color/colorPrimaryDark" />
 
-                    <DatePicker
+                    <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/datePicker" />
+                        android:inputType="date"
+                        android:ems="10"
+                        android:id="@+id/editText4"
+                        android:layout_weight="1"
+                        android:hint="10-12-2016" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -392,13 +397,14 @@
 
                 </LinearLayout>
 
-                <ImageButton
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButton3"
-                    android:src="@drawable/submitbutton"
-                    android:scaleType="fitXY"
-                    android:background="@null" />
+                    android:text="SUBMIT"
+                    android:elevation="5dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/background_light" />
 
 
             </LinearLayout>
